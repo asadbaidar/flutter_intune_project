@@ -18,9 +18,9 @@ dependencies:
     path: ../locale
 
   # owned packages
-  smart_flutter_utils: ^1.0.1+3
-  smart_flutter_widgets: ^1.0.0+3
-  smart_http: ^1.0.1
+  smart_flutter_utils: ^1.0.3
+  smart_flutter_widgets: ^1.0.1
+  smart_http: ^1.0.3
 
   # third-party packages
   google_fonts: ^6.2.1

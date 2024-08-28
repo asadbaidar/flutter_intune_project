@@ -13,14 +13,4 @@ class HttpClientImpl extends HttpClient {
         'Accept': 'application/json',
         'Authorization': 'Bearer ${environment.apiToken}',
       };
-
-  @override
-  String? decodeErrorMessage(dynamic data, int statusCode) {
-    if (data is String && data.isNotBlank) return data;
-
-    final message = super.decodeErrorMessage(data, statusCode);
-    if (message != null) return message;
-
-    return '$statusCode\nSomething went wrong, please try again later.';
-  }
 }
