@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.cxai.intune_plugin">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
+        android:fullBackupContent="true"
+        android:fullBackupOnly="true">
+
+        <!-- Intune MAM configuration -->
+        <meta-data
+            android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment"
+            android:value="false" />
+    </application>
+</manifest>
