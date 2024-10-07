@@ -33,7 +33,7 @@
 
     <application
         android:label="${appName}"
-        android:name="${applicationName}"
+        android:name="com.microsoft.intune.mam.client.app.MAMApplication"
         android:icon="@mipmap/ic_launcher"
         tools:replace="android:label">
         <activity
